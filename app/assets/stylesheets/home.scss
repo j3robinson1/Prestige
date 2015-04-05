@@ -1,0 +1,45 @@
+.cover {
+  position:relative;
+  height: 10;
+  width: 20;
+}
+#fixedbar { 
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: rgba(0,0,0,0.75);
+}
+ 
+#fixednav { 
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px 25px;
+}
+ 
+#fixednav a {
+  text-align: center;
+  display: inline;
+  float: left;
+  font-size: 1.75em;
+  font-weight: bold;
+  color: #96aed8;
+  line-height: 80px;
+  text-decoration: none;
+  padding: 0px 8px;
+  left: 0;
+  right: 0;
+  margin-left: 10%;
+  margin-right: 10%; 
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear; 
+}
+#fixednav a:hover {
+  color: #fff;
+  background: rgba(0,0,0,0.3);
+}
+.y {
+  text-align: center;
+}

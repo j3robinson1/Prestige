@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title Prestige
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    .cover
+      %img{:alt => "Prestige-boca", :height => "250", :src => "/assets/Prestige-Boca.jpg", :width => "100%"}
+    %nav#fixedbar
+      %ul#fixednav
+        = render 'layouts/navbar'
+    .y
+      = yield
