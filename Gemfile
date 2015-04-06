@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 gem 'devise'
-
+gem 'simple_calendar', '~> 1.1.0'
 gem 'haml-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'

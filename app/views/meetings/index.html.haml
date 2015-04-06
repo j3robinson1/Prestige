@@ -1,0 +1,21 @@
+%h1 Listing meetings
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th Starts at
+      %th
+      %th
+      %th
+
+  %tbody
+    = month_calendar events: @meetings do |date, meetings|
+      = date
+      - meetings.each do |meeting|
+        %div
+          = meeting.name
+
+%br
+
+= link_to 'New Meeting', new_meeting_path
