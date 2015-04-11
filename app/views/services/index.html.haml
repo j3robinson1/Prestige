@@ -24,17 +24,27 @@
   .services
     %h2 Services
     %ul
-      %li King Fish Package
+      %br
+      %li
+        King Fish Package
+        %img{:alt => "Kingfish", :height => "30", :src => "/assets/kingfish.jpg", :width => "30"}
       %ul
+        %br
         %li House Wash
+        %br
         %li Window Cleaning(interior/exterior)
+        %br
       %li 
         Shiny Tarpon
-        %img{:alt => "Tarpon", :height => "25", :src => "/assets/Tarpon.jpg", :width => "25"}
+        %img{:alt => "Tarpon", :height => "30", :src => "/assets/Tarpon.jpg", :width => "30"}
       %ul
+        %br
         %li House Wash
+        %br
         %li Exterior Window
+        %br
       %li Quick Joe
       %ul
+        %br
         %li Exterior Windows
-  = link_to 'New Service', new_service_path
+  = link_to 'Schedule an appointment', new_meeting_path
