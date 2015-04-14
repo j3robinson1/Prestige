@@ -4,3 +4,6 @@
   Services
 = link_to contacts_path do
   Contact
+-if admin_signed_in?
+  = link_to meetings_path do
+    Meetings

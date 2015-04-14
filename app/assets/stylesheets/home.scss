@@ -1,16 +1,15 @@
 .cover {
   position:relative;
   height: 10;
-  width: 20;
+  width: 98.5%;
 }
 #fixedbar { 
   position: relative;
-  top: 0;
-  width: 100%;
+  width: 98.5%;
   height: 80px;
   background: rgba(0,0,0,0.75);
 }
- 
+
 #fixednav { 
   display: block;
   width: 100%;
@@ -41,6 +40,7 @@
   background: rgba(0,0,0,0.3);
 }
 .y {
+  position: relative;
   text-align: center;
 }
 .services {
