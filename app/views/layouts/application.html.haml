@@ -7,7 +7,11 @@
     = csrf_meta_tags
   %body
     .cover
-      %img{:alt => "Prestige-boca", :height => "250", :src => "/assets/Prestige-Boca.jpg", :width => "100%"}
+      #slideshow
+        %div
+          %img{:alt => "Prestige-boca", :height => "250", :src => "/assets/Prestige-Boca.jpg", :width => "100%"}
+        %div
+          %img{:alt => "boca2", :height => "250", :src => "/assets/Boca2.jpg", :width => "100%"}
     %nav#fixedbar
       %ul#fixednav
         = render 'layouts/navbar'

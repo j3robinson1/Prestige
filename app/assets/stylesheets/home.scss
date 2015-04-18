@@ -3,6 +3,33 @@
   height: 10;
   width: 98.5%;
 }
+#slideshow { 
+    position: relative; 
+    width: auto; 
+    height: auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+#slideshow > div { 
+    position: relative; 
+    top: 0px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+#slideshow2 { 
+    position: relative; 
+    width: auto; 
+    height: auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4); 
+}
+
+#slideshow2 > div { 
+    position: relative; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
 #fixedbar { 
   position: relative;
   width: 98.5%;

@@ -3,15 +3,22 @@ $(document).ready(function(){
     e.preventDefault();
   });
    
-  $(window).on('scroll',function() {
-    var scrolltop = $(this).scrollTop();
- 
-    if(scrolltop >= 215) {
-      $('#fixedbar').fadeIn(250);
-    }
-     
-    else if(scrolltop <= 210) {
-      $('#fixedbar').fadeOut(250);
-    }
-  });
+  $("#slideshow > div:gt(0)").hide();
+
+  setInterval(function() { 
+    $('#slideshow > div:first')
+      .fadeOut(1000)
+      .next()
+      .fadeIn(1000)
+      .end()
+      .appendTo('#slideshow');
+  },  3000);
+  setInterval(function() { 
+    $('#slideshow2 > div:first')
+      .fadeOut(1000)
+      .next()
+      .fadeIn(1000)
+      .end()
+      .appendTo('#slideshow2');
+  },  3000);
 });
