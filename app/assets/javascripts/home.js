@@ -3,10 +3,10 @@ $(document).ready(function(){
     e.preventDefault();
   });
    
-  $("#slideshow > div:gt(0)").hide();
+  $("#slideshow > span:gt(0)").hide();
 
   setInterval(function() { 
-    $('#slideshow > div:first')
+    $('#slideshow > span:first')
       .fadeOut(1000)
       .next()
       .fadeIn(1000)
@@ -14,7 +14,7 @@ $(document).ready(function(){
       .appendTo('#slideshow');
   },  3000);
   setInterval(function() { 
-    $('#slideshow2 > div:first')
+    $('#slideshow2 > span:first')
       .fadeOut(1000)
       .next()
       .fadeIn(1000)

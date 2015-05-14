@@ -8,12 +8,13 @@
   %body
     .cover
       #slideshow
-        %div
-          %img{:alt => "Prestige-boca", :height => "250", :src => "/assets/Prestige-Boca.jpg", :width => "100%"}
-        %div
+        %span
+          %img{:alt => "Prestige-Boca", :height => "250", :src => "/assets/Prestige-Boca.jpg", :width => "100%"}
+        %span
           %img{:alt => "boca2", :height => "250", :src => "/assets/Boca2.jpg", :width => "100%"}
-    %nav#fixedbar
-      %ul#fixednav
-        = render 'layouts/navbar'
-    .y
-      = yield
+    .ye
+      %nav#fixedbar
+        %ul#fixednav
+          = render 'layouts/navbar'
+      .y
+        = yield
