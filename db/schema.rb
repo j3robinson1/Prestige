@@ -31,16 +31,9 @@ ActiveRecord::Schema.define(version: 20150406155542) do
   add_index "admins", ["email"], name: "index_admins_on_email", unique: true, using: :btree
   add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
 
-  create_table "events", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.datetime "start_at"
-    t.datetime "end_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "meetings", force: :cascade do |t|
     t.string   "name",       limit: 255
+    t.string   "service",    limit: 255
     t.datetime "starts_at"
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
